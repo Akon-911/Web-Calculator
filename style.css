@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+}
+
+#calc {
+    border: 1px;
+    border-color: azure;
+    border-style:solid;
+    background-color: rgb(56, 56, 56);
+}
+
+.display, .sec_display {
+    font-size: 3.9vh;
+    color:white;
+    border: 50px;
+    text-align: right;
+}
+
+.sec_display {
+    font-size: 2.5vh;
+}
+
+.btn {    
+    width: 100%;
+    height: auto;
+    font-size: 2.66vh;
+    cursor: pointer;
+    padding: 2.66vh;
+    border-radius: 6.9vh;
+    border-style: none;
+}
+.btn:hover {
+    background-color: rgba(216, 216, 216, 0.648);
+}
