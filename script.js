@@ -53,6 +53,19 @@ document.addEventListener('DOMContentLoaded', (e) => {
                 }
                 sec_display.textContent = answer;
                 display.textContent = '0';
+            } else if (con==="<-") {
+
+                if (dis.length < 2) {
+                    if (dis==='0') { return; }
+                    else { display.textContent = '0'; return; }
+
+                } else {
+
+                    display.textContent = dis.substring(0,dis.length-1);
+                    return
+
+                }
+            
             } else { // Now for sure, Numbers must be pressed
                 display.textContent = (dis === '0') ? con : dis+con;
             }
